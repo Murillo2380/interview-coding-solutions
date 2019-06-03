@@ -23,30 +23,51 @@ class LinkedList {
         this.count = 0;
     }
 
-    /**
-     *
-     * @param {ListNode} element
-     */
-    remove(element) {
+    removeMiddle(element) {
         this.count--;
-
-        if (!element.next) {
-            this.head = element.previous; // update head
-            if (this.head) this.head.next = null; // unlink from list
-            return;
-        }
-
-        if (!element.previous) {
-            this.tail = element.next; // update tail
-            if (this.tail) this.tail.previous = null; // unlink from list
-            return;
-        }
-
         const previous = element.previous;
         const next = element.next;
 
         previous.next = next;
         next.previous = previous;
+    }
+
+    removeHead() {
+        this.count--;
+
+        const removed = this.head;
+
+        this.head = this.head.previous;
+        if (this.head) this.head.next = null;
+
+        return removed;
+    }
+
+    removeTail() {
+        this.count--;
+        const removed = this.tail;
+        this.tail = this.tail.next;
+        if (this.tail) this.tail.previous = null;
+
+        return removed;
+    }
+
+    /**
+     *
+     * @param {ListNode} element
+     */
+    remove(element) {
+        if (!element.next) {
+            this.removeHead();
+            return;
+        }
+
+        if (!element.previous) {
+            this.removeTail();
+            return;
+        }
+
+        this.removeMiddle(element);
     }
 
     insert(key, value) {
@@ -58,12 +79,6 @@ class LinkedList {
 
         this.head = newElement;
         return newElement;
-    }
-
-    removeLast() {
-        const tail = this.tail;
-        this.remove(this.tail);
-        return tail;
     }
 
     getCount() {
@@ -92,7 +107,7 @@ class MyCache {
         }
 
         if (this.values.getCount() === this.limit) {
-            const removed = this.values.removeLast();
+            const removed = this.values.removeTail();
             this.keyValueMap[removed.key] = undefined;
         }
 
@@ -115,12 +130,16 @@ cache.set("abc", 17);
 cache.set("third", 12);
 cache.set("a", 3);
 cache.set("b", 7);
+cache.set("abc", 90);
+cache.set("k", 1);
 console.log(cache.get("abc"));
 console.log("================");
 console.log(cache.get("SECOND")); // must be null
 console.log("================");
-console.log(cache.get("third"));
+console.log(cache.get("third")); // must be null
 console.log("================");
 console.log(cache.get("a"));
 console.log("================");
 console.log(cache.get("b"));
+console.log("================");
+console.log(cache.get("k"));
