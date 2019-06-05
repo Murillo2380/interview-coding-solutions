@@ -8,7 +8,7 @@ This repo exists to share some solutions I've implemented, along with the questi
 
 ## Running the code
 
-Navigate to the desired folder's solution and than, execute the following for the desired language:
+Navigate to the desired folder's solution and then, execute the following for the desired language:
 
 -   **JavaScript**
 
