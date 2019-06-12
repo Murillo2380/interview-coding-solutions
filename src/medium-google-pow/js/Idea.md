@@ -1,5 +1,11 @@
 # Idea behind the solution
 
-The problem does not state any restriction or performance bounds.
+The idea is just to divide the problem into subproblems.
 
-It was simply used two stacks, one to stack any enqueued value and the other to be used as a helper, so we transfer every items from one stack to the other, remove the last element from the helper stack and than transfer the elements back to the first stack to keep the enqueued order.
+For instance:
+
+```
+2^10 = 2*(2^5) = 2*(2*(2^2)) = 2*(2*(2*(2^1)))
+```
+
+Can be solved in 4 steps, whereas the normal multiplication approach would solve this in 10 steps.
