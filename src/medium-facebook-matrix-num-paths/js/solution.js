@@ -66,11 +66,10 @@
 */
 
 function numPaths(numRows, numColumns) {
-    const solutions = new Array(numRows)
-        .fill(0)
-        .map(() => new Array(numColumns).fill(0));
+    const solutions = new Array(numRows);
 
     for (i = 0; i < numRows; i++) {
+        solutions[i] = new Array(numColumns);
         for (j = 0; j < numColumns; j++) {
             if (i === 0 || j === 0) solutions[i][j] = 1;
             else solutions[i][j] = solutions[i - 1][j] + solutions[i][j - 1];
