@@ -35,7 +35,7 @@ Applying the same logic for the matrix `3x2`:
 0   0   0
 ```
 
-`s(3, 2) = s(2, 2) + s(3, 1) = 2 + 1 = 5`
+`s(3, 2) = s(2, 2) + s(3, 1) = 2 + 1 = 3`
 
 For the matrix `3x3`:
 
