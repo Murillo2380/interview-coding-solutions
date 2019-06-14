@@ -66,20 +66,14 @@
 */
 
 function numPaths(numRows, numColumns) {
-    const greater = Math.max(numRows, numColumns);
-    const solutions = new Array(greater)
+    const solutions = new Array(numRows)
         .fill(0)
-        .map(() => new Array(greater).fill(0));
+        .map(() => new Array(numColumns).fill(0));
 
     for (i = 0; i < numRows; i++) {
         for (j = 0; j < numColumns; j++) {
-            if (i === 0 || j === 0) {
-                solutions[i][j] = 1;
-                solutions[j][i] = 1;
-            } else {
-                const result = solutions[i - 1][j] + solutions[i][j - 1];
-                solutions[i][j] = result;
-            }
+            if (i === 0 || j === 0) solutions[i][j] = 1;
+            else solutions[i][j] = solutions[i - 1][j] + solutions[i][j - 1];
         }
     }
 
@@ -89,3 +83,4 @@ function numPaths(numRows, numColumns) {
 console.log(numPaths(5, 5)); // 70
 console.log(numPaths(2, 2)); // 2
 console.log(numPaths(3, 5)); // 15
+console.log(numPaths(5, 3)); // 15
