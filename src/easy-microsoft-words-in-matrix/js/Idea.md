@@ -1,3 +1,5 @@
 # Idea behind the solution
 
-The solution is pretty straight forward: you just need two functions: one to check the row and the other one to check the columns, starting to check the letters of the word from the same given position in the matrix.
+The secret here is just to track how many elements has been printed, as well as keep tracking the current element printed, checking whether it is possible to print the next element or if it is needed to change the "print direction".
+
+Also, to remember which element has been printed, null is set on the element that has just been printed.
