@@ -59,5 +59,5 @@ const bishops2 = [
     { row: 4, column: 0 }
 ];
 
-console.log(countAttacks(bishops1)); // 5
+console.log(countAttacks(bishops1)); // 4
 console.log(countAttacks(bishops2)); // 2
