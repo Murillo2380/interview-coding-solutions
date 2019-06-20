@@ -90,10 +90,9 @@ function solve2(numbers) {
 
     if (greaterIndexes[0] === -1) {
         // does not have any positive number in the array
-        return (
-            numbers[greaterNegativeIndexes[2]] *
-            numbers[greaterNegativeIndexes[1]] *
-            numbers[greaterNegativeIndexes[0]]
+        return greaterNegativeIndexes.reduce(
+            (total, i) => total * numbers[i],
+            1
         );
     }
 
