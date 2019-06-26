@@ -16,6 +16,13 @@ Navigate to the desired folder's solution and then, execute the following for th
 node solution.js
 ```
 
+-   **Java**
+
+```bash
+javac Solution.java
+java Solution
+```
+
 ## Contributing
 
 TODO (basically I think it will be a simple pull request with your solution in a file like `solution.x`).
