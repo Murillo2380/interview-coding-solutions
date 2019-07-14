@@ -1,0 +1,19 @@
+{
+    "name": "interview-coding-solutions",
+    "version": "1.0.0",
+    "description": "Interview solutions",
+    "author": "Murillo Ferreira",
+    "license": "MIT",
+    "scripts": {
+        "compileUpdater": "javac ReadmeUpdater.java",
+        "precommit": "java ReadmeUpdater"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "yarn precommit"
+        }
+    },
+    "devDependencies": {
+        "husky": "^3.0.0"
+    }
+}
