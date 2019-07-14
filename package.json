@@ -5,16 +5,22 @@
     "author": "Murillo Ferreira",
     "license": "MIT",
     "scripts": {
+        "updateReadme": "java ReadmeUpdater",
         "compileUpdater": "javac ReadmeUpdater.java",
-        "precommit": "java ReadmeUpdater && echo 'README.md updated'"
+        "precommit": "lint-staged"
     },
     "husky": {
         "hooks": {
             "pre-commit": "yarn precommit"
         }
     },
+    "lint-staged": {
+        "*": [
+            "yarn updateReadme",
+            "git add"
+        ]
+    },
     "devDependencies": {
-        "husky": "^3.0.0",
-        "lint-staged": "^9.2.0"
+        "husky": "^3.0.0"
     }
 }
