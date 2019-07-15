@@ -15,8 +15,11 @@
         }
     },
     "lint-staged": {
-        "*": [
+        "src/**/*": [
             "yarn updateReadme",
+            "git add README.md"
+        ],
+        "*": [
             "git add"
         ]
     },
