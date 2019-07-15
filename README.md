@@ -29,6 +29,46 @@ TODO (basically I think it will be a simple pull request with your solution in a
 
 ## Problems
 
+### easy-google-deepest-node
+
+[JavaScript Solution](./src/easy-google-deepest-node/js/solution.js)
+[JavaScript Solution Idea](./src/easy-google-deepest-node/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Google**.
+
+Given the root of a binary tree, return a deepest node. For example, in the following tree, return d.
+
+```
+    a
+   / \
+  b   c
+ /
+d
+```
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-square-fair-coin-toss
+
+[JavaScript Solution](./src/medium-square-fair-coin-toss/js/solution.js)
+[JavaScript Solution Idea](./src/medium-square-fair-coin-toss/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Square**.
+
+Assume you have access to a function `toss_biased()` which returns `0` or `1` with a probability that's not `50-50` (but also not `0-100` or `100-0`). You do not know the bias of the coin.
+
+Write a function to simulate an unbiased coin toss.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
 ### easy-microsoft-words-in-matrix
 
 [JavaScript Solution](./src/easy-microsoft-words-in-matrix/js/solution.js)
@@ -55,63 +95,20 @@ and the target word **'FOAM'**, you should return **true**, since it's the leftm
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### medium-square-fair-coin-toss
+### easy-microsoft-digits-sum-10
 
-[JavaScript Solution](./src/medium-square-fair-coin-toss/js/solution.js)
-[JavaScript Solution Idea](./src/medium-square-fair-coin-toss/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Square**.
-
-Assume you have access to a function `toss_biased()` which returns `0` or `1` with a probability that's not `50-50` (but also not `0-100` or `100-0`). You do not know the bias of the coin.
-
-Write a function to simulate an unbiased coin toss.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-google-deepest-node
-
-[JavaScript Solution](./src/easy-google-deepest-node/js/solution.js)
-[JavaScript Solution Idea](./src/easy-google-deepest-node/js/Idea.md)
+[JavaScript Solution](./src/easy-microsoft-digits-sum-10/js/solution.js)
+[JavaScript Solution Idea](./src/easy-microsoft-digits-sum-10/js/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by **Google**.
+This problem was asked by **Microsoft**.
 
-Given the root of a binary tree, return a deepest node. For example, in the following tree, return d.
+A number is considered perfect if its digits sum up to exactly `10`.
 
-```
-    a
-   / \
-  b   c
- /
-d
-```
+Given a positive integer `n`, return the `n-th` perfect number.
 
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### medium-facebook-matrix-num-paths
-
-[JavaScript Solution](./src/medium-facebook-matrix-num-paths/js/solution.js)
-[JavaScript Solution Idea](./src/medium-facebook-matrix-num-paths/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Facebook**.
-
-There is an `N` by `M` matrix of zeroes. Given `N` and `M`, write a function to count the number of ways of starting at the `top-left` corner and getting to the `bottom-right` corner. You can only move `right` or `down`.
-
-For example, given a `2` by `2` matrix, you should return `2`, since there are `two ways` to get to the `bottom-right`:
-
--   Right, then down
--   Down, then right
-
-Given a `5` by `5` matrix, there are `70` ways to get to the `bottom-right`.
+For example, given `1`, you should return `19`. Given `2`, you should return `28`.
 
 #### Source
 
@@ -152,6 +149,28 @@ should become:
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
+### medium-facebook-matrix-num-paths
+
+[JavaScript Solution](./src/medium-facebook-matrix-num-paths/js/solution.js)
+[JavaScript Solution Idea](./src/medium-facebook-matrix-num-paths/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Facebook**.
+
+There is an `N` by `M` matrix of zeroes. Given `N` and `M`, write a function to count the number of ways of starting at the `top-left` corner and getting to the `bottom-right` corner. You can only move `right` or `down`.
+
+For example, given a `2` by `2` matrix, you should return `2`, since there are `two ways` to get to the `bottom-right`:
+
+-   Right, then down
+-   Down, then right
+
+Given a `5` by `5` matrix, there are `70` ways to get to the `bottom-right`.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
 ### medium-linkedin-correctness-of-bst
 
 [JavaScript Solution](./src/medium-linkedin-correctness-of-bst/js/solution.js)
@@ -169,20 +188,54 @@ A binary search tree is a tree with two children, left and right, and satisfies 
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### easy-microsoft-digits-sum-10
+### medium-facebook-get-number-using-bit-math-operations
 
-[JavaScript Solution](./src/easy-microsoft-digits-sum-10/js/solution.js)
-[JavaScript Solution Idea](./src/easy-microsoft-digits-sum-10/js/Idea.md)
+[Java Solution](./src/medium-facebook-get-number-using-bit-math-operations/java/Solution.java)
+[Java Solution Idea](./src/medium-facebook-get-number-using-bit-math-operations/java/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by **Microsoft**.
+This problem was asked by **Facebook**.
 
-A number is considered perfect if its digits sum up to exactly `10`.
+Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.
 
-Given a positive integer `n`, return the `n-th` perfect number.
+#### Source
 
-For example, given `1`, you should return `19`. Given `2`, you should return `28`.
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-google-special-chess-bishop
+
+[JavaScript Solution](./src/medium-google-special-chess-bishop/js/solution.js)
+[JavaScript Solution Idea](./src/medium-google-special-chess-bishop/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Google**.
+
+On our special chessboard, two bishops attack each other if they share the same diagonal. This includes bishops that have another bishop located between them, i.e. bishops can attack through pieces.
+
+You are given `N` bishops, represented as `(row, column)` tuples on a `M` by `M` chessboard. Write a function to count the number of pairs of bishops that attack each other. The ordering of the pair doesn't matter: `(1, 2`) is considered the same as `(2, 1)`.
+
+For example, given `M = 5` and the list of bishops:
+
+```
+(0, 0)
+(1, 2)
+(2, 2)
+(4, 0)
+```
+
+The board would look like this:
+
+```
+[b 0 0 0 0]
+[0 0 b 0 0]
+[0 0 b 0 0]
+[0 0 0 0 0]
+[b 0 0 0 0]
+```
+
+You should return `2`, since bishops `1` and `3` attack each other, as well as bishops `3` and `4`.
 
 #### Source
 
@@ -276,93 +329,6 @@ class Solution:
 
 Received by email from the [Daily Interview Pro](https://www.techseries.dev/daily)
 
-### medium-facebook-get-number-using-bit-math-operations
-
-[Java Solution](./src/medium-facebook-get-number-using-bit-math-operations/java/Solution.java)
-[Java Solution Idea](./src/medium-facebook-get-number-using-bit-math-operations/java/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Facebook**.
-
-Given three 32-bit integers x, y, and b, return x if b is 1 and y if b is 0, using only mathematical or bit operations. You can assume b can only be 1 or 0.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### medium-google-special-chess-bishop
-
-[JavaScript Solution](./src/medium-google-special-chess-bishop/js/solution.js)
-[JavaScript Solution Idea](./src/medium-google-special-chess-bishop/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Google**.
-
-On our special chessboard, two bishops attack each other if they share the same diagonal. This includes bishops that have another bishop located between them, i.e. bishops can attack through pieces.
-
-You are given `N` bishops, represented as `(row, column)` tuples on a `M` by `M` chessboard. Write a function to count the number of pairs of bishops that attack each other. The ordering of the pair doesn't matter: `(1, 2`) is considered the same as `(2, 1)`.
-
-For example, given `M = 5` and the list of bishops:
-
-```
-(0, 0)
-(1, 2)
-(2, 2)
-(4, 0)
-```
-
-The board would look like this:
-
-```
-[b 0 0 0 0]
-[0 0 b 0 0]
-[0 0 b 0 0]
-[0 0 0 0 0]
-[b 0 0 0 0]
-```
-
-You should return `2`, since bishops `1` and `3` attack each other, as well as bishops `3` and `4`.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### medium-facebook-non-decreasing
-
-[Java Solution](./src/medium-facebook-non-decreasing/java/Solution.java)
-[Java Solution Idea](./src/medium-facebook-non-decreasing/java/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Facebook**.
-
-Given an array of integers, write a function to determine whether the array could become non-decreasing by modifying at most 1 element.
-
-For example, given the array `[10, 5, 7]`, you should return `true`, since we can modify the `10` into a `1` to make the array non-decreasing.
-
-Given the array `[10, 5, 1]`, you should return `false`, since we can't modify any one element to get a non-decreasing array.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### medium-google-merge-sorted-singly-list
-
-[Java Solution](./src/medium-google-merge-sorted-singly-list/java/Solution.java)
-[Java Solution Idea](./src/medium-google-merge-sorted-singly-list/java/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Google**.
-
-Given k sorted singly linked lists, write a function to merge all the lists into one sorted singly linked list.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
 ### medium-apple-stacks-queue
 
 [JavaScript Solution](./src/medium-apple-stacks-queue/js/solution.js)
@@ -373,23 +339,6 @@ Good morning! Here's your coding interview problem for today.
 This problem was asked by **Apple**.
 
 Implement a queue using two stacks. Recall that a queue is a FIFO (first-in, first-out) data structure with the following methods: `enqueue`, which inserts an element into the queue, and `dequeue`, which removes it.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-facebook-best-buy-sell-price
-
-[JavaScript Solution](./src/easy-facebook-best-buy-sell-price/js/solution.js)
-[JavaScript Solution Idea](./src/easy-facebook-best-buy-sell-price/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Facebook**.
-
-Given a array of numbers representing the stock prices of a company in chronological order, write a function that calculates the maximum profit you could have made from buying and selling that stock once. You must buy before you can sell it.
-
-For example, given `[9, 11, 8, 5, 7, 10]`, you should return `5`, since you could buy the stock at `5` dollars and sell it at `10` dollars.
 
 #### Source
 
@@ -415,18 +364,35 @@ Each operation should run in `O(1)` time.
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### easy-microsoft-read7
+### medium-google-merge-sorted-singly-list
 
-[Java Solution](./src/easy-microsoft-read7/java/Solution.java)
-[Java Solution Idea](./src/easy-microsoft-read7/java/Idea.md)
+[Java Solution](./src/medium-google-merge-sorted-singly-list/java/Solution.java)
+[Java Solution Idea](./src/medium-google-merge-sorted-singly-list/java/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked **Microsoft**.
+This problem was asked by **Google**.
 
-Using a `read7()` method that returns `7` characters from a file, implement `readN(n)` which reads `n` characters.
+Given k sorted singly linked lists, write a function to merge all the lists into one sorted singly linked list.
 
-For example, given a file with the content “Hello world”, three `read7()` returns “Hello w”, “orld” and then “”.
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-facebook-non-decreasing
+
+[Java Solution](./src/medium-facebook-non-decreasing/java/Solution.java)
+[Java Solution Idea](./src/medium-facebook-non-decreasing/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Facebook**.
+
+Given an array of integers, write a function to determine whether the array could become non-decreasing by modifying at most 1 element.
+
+For example, given the array `[10, 5, 7]`, you should return `true`, since we can modify the `10` into a `1` to make the array non-decreasing.
+
+Given the array `[10, 5, 1]`, you should return `false`, since we can't modify any one element to get a non-decreasing array.
 
 #### Source
 
@@ -451,44 +417,6 @@ You can assume the list has at least three integers.
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### medium-facebook-subsetsum
-
-[JavaScript Solution](./src/medium-facebook-subsetsum/js/solution.js)
-[JavaScript Solution Idea](./src/medium-facebook-subsetsum/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Facebook**.
-
-Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.
-
-For example, given the multiset `{15, 5, 20, 10, 35, 15, 10}`, it would return `true`, since we can split it up into `{15, 5, 10, 15, 10}` and `{20, 35}`, which both add up to `55`.
-
-Given the multiset `{15, 5, 20, 10, 35}`, it would return false, since we can't split it up into two subsets that add up to the same sum.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-microsoft-shorten-url
-
-[JavaScript Solution](./src/easy-microsoft-shorten-url/js/solution.js)
-[JavaScript Solution Idea](./src/easy-microsoft-shorten-url/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Microsoft**.
-
-Implement a URL shortener with the following methods:
-
-`shorten(url)`, which shortens the url into a six-character alphanumeric string, such as `zLg6wl`.
-`restore(short)`, which expands the shortened string into the original url. If no such shortened string exists, return null.
-Hint: What if we enter the same URL twice?
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
 ### medium-google-pow
 
 [JavaScript Solution](./src/medium-google-pow/js/solution.js)
@@ -508,16 +436,35 @@ For example, `pow(2, 10)` should return `1024`.
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### easy-google-reverse-linked-list
+### easy-facebook-best-buy-sell-price
 
-[Java Solution](./src/easy-google-reverse-linked-list/java/Solution.java)
-[Java Solution Idea](./src/easy-google-reverse-linked-list/java/Idea.md)
+[JavaScript Solution](./src/easy-facebook-best-buy-sell-price/js/solution.js)
+[JavaScript Solution Idea](./src/easy-facebook-best-buy-sell-price/js/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by **Google**.
+This problem was asked by **Facebook**.
 
-Given the head of a singly linked list, reverse it in-place.
+Given a array of numbers representing the stock prices of a company in chronological order, write a function that calculates the maximum profit you could have made from buying and selling that stock once. You must buy before you can sell it.
+
+For example, given `[9, 11, 8, 5, 7, 10]`, you should return `5`, since you could buy the stock at `5` dollars and sell it at `10` dollars.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### easy-microsoft-read7
+
+[Java Solution](./src/easy-microsoft-read7/java/Solution.java)
+[Java Solution Idea](./src/easy-microsoft-read7/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked **Microsoft**.
+
+Using a `read7()` method that returns `7` characters from a file, implement `readN(n)` which reads `n` characters.
+
+For example, given a file with the content “Hello world”, three `read7()` returns “Hello w”, “orld” and then “”.
 
 #### Source
 
@@ -542,6 +489,114 @@ For example, given the string `"the quick brown fox jumps over the lazy dog"` an
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
+### medium-google-matching-parenthesis
+
+[Java Solution](./src/medium-google-matching-parenthesis/java/Solution.java)
+[Java Solution Idea](./src/medium-google-matching-parenthesis/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Google**.
+
+Given a string of parentheses, write a function to compute the minimum number of parentheses to be removed to make the string valid (i.e. each open parenthesis is eventually closed).
+
+For example, given the string "()())()", you should return 1. Given the string ")(", you should return 2, since we must remove all of them.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### easy-microsoft-shorten-url
+
+[JavaScript Solution](./src/easy-microsoft-shorten-url/js/solution.js)
+[JavaScript Solution Idea](./src/easy-microsoft-shorten-url/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Microsoft**.
+
+Implement a URL shortener with the following methods:
+
+`shorten(url)`, which shortens the url into a six-character alphanumeric string, such as `zLg6wl`.
+`restore(short)`, which expands the shortened string into the original url. If no such shortened string exists, return null.
+Hint: What if we enter the same URL twice?
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-facebook-subsetsum
+
+[JavaScript Solution](./src/medium-facebook-subsetsum/js/solution.js)
+[JavaScript Solution Idea](./src/medium-facebook-subsetsum/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Facebook**.
+
+Given a multiset of integers, return whether it can be partitioned into two subsets whose sums are the same.
+
+For example, given the multiset `{15, 5, 20, 10, 35, 15, 10}`, it would return `true`, since we can split it up into `{15, 5, 10, 15, 10}` and `{20, 35}`, which both add up to `55`.
+
+Given the multiset `{15, 5, 20, 10, 35}`, it would return false, since we can't split it up into two subsets that add up to the same sum.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### easy-snapshat-overlapping-interval
+
+[Java Solution](./src/easy-snapshat-overlapping-interval/java/Solution.java)
+[Java Solution Idea](./src/easy-snapshat-overlapping-interval/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Snapchat**.
+
+Given a list of possibly overlapping intervals, return a new list of intervals where all overlapping intervals have been merged.
+
+The input list is not necessarily ordered in any way.
+
+For example, given `[(1, 3), (5, 8), (4, 10), (20, 25)]`, you should return `[(1, 3), (4, 10), (20, 25)]`.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### hard-google-king-tour
+
+[Java Solution](./src/hard-google-king-tour/java/Solution.java)
+[Java Solution Idea](./src/hard-google-king-tour/java/Idea.md)
+[JavaScript Solution](./src/hard-google-king-tour/js/solution.js)
+[JavaScript Solution Idea](./src/hard-google-king-tour/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Google**.
+
+A knight's tour is a sequence of moves by a knight on a chessboard such that all squares are visited once.
+
+Given `N`, write a function to return the number of knight's tours on an `N` by `N` chessboard.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### easy-google-reverse-linked-list
+
+[Java Solution](./src/easy-google-reverse-linked-list/java/Solution.java)
+[Java Solution Idea](./src/easy-google-reverse-linked-list/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Google**.
+
+Given the head of a singly linked list, reverse it in-place.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
 ### hard-airbnb-course-dependency
 
 [Java Solution](./src/hard-airbnb-course-dependency/java/Solution.java)
@@ -561,18 +616,80 @@ For example, given `{'CSC300': ['CSC100', 'CSC200'], 'CSC200': ['CSC100'], 'CSC1
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### medium-google-matching-parenthesis
+### easy-microsoft-operation-tree
 
-[Java Solution](./src/medium-google-matching-parenthesis/java/Solution.java)
-[Java Solution Idea](./src/medium-google-matching-parenthesis/java/Idea.md)
+[JavaScript Solution](./src/easy-microsoft-operation-tree/js/solution.js)
+[JavaScript Solution Idea](./src/easy-microsoft-operation-tree/js/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by **Google**.
+This problem was asked by **Microsoft**.
 
-Given a string of parentheses, write a function to compute the minimum number of parentheses to be removed to make the string valid (i.e. each open parenthesis is eventually closed).
+Suppose an arithmetic expression is given as a binary tree. Each leaf is an integer and each internal node is one of '+', '−', '∗', or '/'.
 
-For example, given the string "()())()", you should return 1. Given the string ")(", you should return 2, since we must remove all of them.
+Given the root to such a tree, write a function to evaluate it.
+
+For example, given the following tree:
+
+```
+    *
+   / \
+  +    +
+ / \  / \
+3  2  4  5
+```
+
+You should return **45**, as it is **(3 + 2) \* (4 + 5)**.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-contextlogic-division-without-divide
+
+[JavaScript Solution](./src/medium-contextlogic-division-without-divide/js/solution.js)
+[JavaScript Solution Idea](./src/medium-contextlogic-division-without-divide/js/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This question was asked by **ContextLogic**.
+
+Implement division of two positive integers without using the division, multiplication, or modulus operators. Return the quotient as an integer, ignoring the remainder.
+
+#### Source
+
+Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
+
+### medium-apple-multiplication-table
+
+[Java Solution](./src/medium-apple-multiplication-table/java/Solution.java)
+[Java Solution Idea](./src/medium-apple-multiplication-table/java/Idea.md)
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by **Apple**.
+
+Suppose you have a multiplication table that is N by N. That is, a 2D array where the value at the i-th row and j-th column is `(i + 1) * (j + 1)` (if 0-indexed) or `i * j` (if 1-indexed).
+
+Given integers N and X, write a function that returns the number of times X appears as a value in an N by N multiplication table.
+
+For example, given N = 6 and X = 12, you should return 4, since the multiplication table looks like this:
+
+```
+| 1 | 2 | 3 | 4 | 5 | 6 |
+
+| 2 | 4 | 6 | 8 | 10 | 12 |
+
+| 3 | 6 | 9 | 12 | 15 | 18 |
+
+| 4 | 8 | 12 | 16 | 20 | 24 |
+
+| 5 | 10 | 15 | 20 | 25 | 30 |
+
+| 6 | 12 | 18 | 24 | 30 | 36 |
+```
+
+And there are 4 12's in the table.
 
 #### Source
 
@@ -631,74 +748,16 @@ Your function should return 3, since we would need to remove all the columns to 
 
 Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
 
-### medium-apple-multiplication-table
+### easy-two-sigma-rand5
 
-[Java Solution](./src/medium-apple-multiplication-table/java/Solution.java)
-[Java Solution Idea](./src/medium-apple-multiplication-table/java/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Apple**.
-
-Suppose you have a multiplication table that is N by N. That is, a 2D array where the value at the i-th row and j-th column is `(i + 1) * (j + 1)` (if 0-indexed) or `i * j` (if 1-indexed).
-
-Given integers N and X, write a function that returns the number of times X appears as a value in an N by N multiplication table.
-
-For example, given N = 6 and X = 12, you should return 4, since the multiplication table looks like this:
-
-```
-| 1 | 2 | 3 | 4 | 5 | 6 |
-
-| 2 | 4 | 6 | 8 | 10 | 12 |
-
-| 3 | 6 | 9 | 12 | 15 | 18 |
-
-| 4 | 8 | 12 | 16 | 20 | 24 |
-
-| 5 | 10 | 15 | 20 | 25 | 30 |
-
-| 6 | 12 | 18 | 24 | 30 | 36 |
-```
-
-And there are 4 12's in the table.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-snapshat-overlapping-interval
-
-[Java Solution](./src/easy-snapshat-overlapping-interval/java/Solution.java)
-[Java Solution Idea](./src/easy-snapshat-overlapping-interval/java/Idea.md)
+[Java Solution](./src/easy-two-sigma-rand5/java/Solution.java)
+[Java Solution Idea](./src/easy-two-sigma-rand5/java/Idea.md)
 
 Good morning! Here's your coding interview problem for today.
 
-This problem was asked by **Snapchat**.
+This problem was asked by Two Sigma.
 
-Given a list of possibly overlapping intervals, return a new list of intervals where all overlapping intervals have been merged.
-
-The input list is not necessarily ordered in any way.
-
-For example, given `[(1, 3), (5, 8), (4, 10), (20, 25)]`, you should return `[(1, 3), (4, 10), (20, 25)]`.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### hard-google-king-tour
-
-[Java Solution](./src/hard-google-king-tour/java/Solution.java)
-[Java Solution Idea](./src/hard-google-king-tour/java/Idea.md)
-[JavaScript Solution](./src/hard-google-king-tour/js/solution.js)
-[JavaScript Solution Idea](./src/hard-google-king-tour/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Google**.
-
-A knight's tour is a sequence of moves by a knight on a chessboard such that all squares are visited once.
-
-Given `N`, write a function to return the number of knight's tours on an `N` by `N` chessboard.
+Using a function `rand7()` that returns an integer from `1` to `7` (inclusive) with uniform probability, implement a function `rand5()` that returns an integer from `1` to `5` (inclusive).
 
 #### Source
 
@@ -725,65 +784,6 @@ For example, this matrix has 4 islands.
 1 1 0 0 1
 1 1 0 0 1
 ```
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-two-sigma-rand5
-
-[Java Solution](./src/easy-two-sigma-rand5/java/Solution.java)
-[Java Solution Idea](./src/easy-two-sigma-rand5/java/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by Two Sigma.
-
-Using a function `rand7()` that returns an integer from `1` to `7` (inclusive) with uniform probability, implement a function `rand5()` that returns an integer from `1` to `5` (inclusive).
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### easy-microsoft-operation-tree
-
-[JavaScript Solution](./src/easy-microsoft-operation-tree/js/solution.js)
-[JavaScript Solution Idea](./src/easy-microsoft-operation-tree/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This problem was asked by **Microsoft**.
-
-Suppose an arithmetic expression is given as a binary tree. Each leaf is an integer and each internal node is one of '+', '−', '∗', or '/'.
-
-Given the root to such a tree, write a function to evaluate it.
-
-For example, given the following tree:
-
-```
-    *
-   / \
-  +    +
- / \  / \
-3  2  4  5
-```
-
-You should return **45**, as it is **(3 + 2) \* (4 + 5)**.
-
-#### Source
-
-Received by email from the [Daily Coding Problem](https://www.dailycodingproblem.com)
-
-### medium-contextlogic-division-without-divide
-
-[JavaScript Solution](./src/medium-contextlogic-division-without-divide/js/solution.js)
-[JavaScript Solution Idea](./src/medium-contextlogic-division-without-divide/js/Idea.md)
-
-Good morning! Here's your coding interview problem for today.
-
-This question was asked by **ContextLogic**.
-
-Implement division of two positive integers without using the division, multiplication, or modulus operators. Return the quotient as an integer, ignoring the remainder.
 
 #### Source
 
