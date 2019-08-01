@@ -1,5 +1,18 @@
 # Idea behind the solution
 
-For this problem we simply need to build a stack of nodes and pop every element, appending each element from the stack at the end of the linked list.
+Consider this list:
+```
+1 -> 2 -> 3 -> 4 -> 5
+```
+The reverse would be:
+```
+5 -> 4 -> 3 -> 2 -> 1
+```
+or
+```
+1 <- 2 <- 3 <- 4 <- 5
+```
 
-This algorithm needs `O(n)` space to run and runs on `O(n^2)` where `n` is the number of elements in the linked list. The algorithm can be improved to run in `O(n)` by tracking the tail of the list to improve the insertion performance.
+Note that it is just needed to reverse the arrow's direction, in other words, having a node `n`, do `n.next = n.previous`. Considering that we don't have access do the previous element, we just need another variable to keep tracking who is the previous element in the list.
+
+At the end, just update the head of the list to be the last node. This algorithm runs once for each node, thus it runs in `O(n)`.

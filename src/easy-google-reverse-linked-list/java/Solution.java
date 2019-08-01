@@ -21,10 +21,6 @@ class Solution {
             public Node getNext() {
                 return next;
             }
-
-            public int getValue() {
-                return value;
-            }
         }
 
         public MyLinkedList add(int value) {
@@ -71,18 +67,19 @@ class Solution {
     }
 
     private static void reverse(MyLinkedList list) {
-        Stack<MyLinkedList.Node> stack = new Stack<>();
 
+        MyLinkedList.Node previous = null;
         MyLinkedList.Node current = list.getHead();
-        while (current != null) {
-            stack.push(current);
-            current = current.getNext();
+
+        while(current != null){
+            MyLinkedList.Node remainingList = current.getNext();
+            current.setNext(previous);
+            previous = current;
+            current = remainingList;
         }
 
-        list.setHead(stack.pop());
-        while (stack.size() > 0)
-            list.add(stack.pop().value);
-
+        list.setHead(previous);
+        
     }
 
     public static void main(String[] args) {
